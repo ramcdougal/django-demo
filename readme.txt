@@ -1,4 +1,4 @@
-To run the server:
+To run the server, change into the demo folder, then:
 
     python manage.py runserver
 
