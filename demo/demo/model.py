@@ -24,6 +24,7 @@ class Model:
     def get_cell(id_):
         return cell_data.get(id_)
     def add_cell(**fields):
+        # note this assumes just one item for each key
         new_id = max(cell_data.keys()) + 1
-        cell_data[new_id] = fields
+        cell_data[new_id] = {key: value[0] for key, value in fields.items()}
         return new_id

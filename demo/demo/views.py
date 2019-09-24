@@ -1,7 +1,9 @@
 from .model import Model
 from django.http import JsonResponse, HttpResponseNotFound, HttpResponseForbidden
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
 
+@csrf_exempt
 def api_cells(request):
     if request.method == 'POST':
         # returns the id of the newly added cell which is described by whatever
