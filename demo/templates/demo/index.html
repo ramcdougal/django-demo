@@ -1,0 +1,12 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p>We currently know about {{num_cells}} cells with identifiers:</p>
+        <ul>
+            {% for cell in cells %}
+                <li><a href="/cell/{{cell}}">{{cell}}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

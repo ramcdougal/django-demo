@@ -19,5 +19,7 @@ from . import views
 
 urlpatterns = [
     path('api/cells', views.api_cells),
-    path('api/cells/<int:cell_id>', views.api_cell)
+    path('api/cells/<int:cell_id>', views.api_cell),
+    path('', views.index),
+    path('cell/<int:cell_id>', views.cell)
 ]

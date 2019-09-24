@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>{{cell.name}}</title>
+    </head>
+    <body>
+        <h1>{{cell.name}}</h1>
+        <table>
+            {% for key, value in cell.items %}
+                {% if key != 'name' %}
+                    <tr><td style="font-weight: bold">{{key}}</td><td>{{value}}</td></tr>
+                {% endif %}
+            {% endfor %}
+        </table>
+        <br/><br/>
+        <p><a href="/">Return to homepage</a></p>
+    </body>
+</html>
