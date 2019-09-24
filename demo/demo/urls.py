@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('api/cells', views.api_cells),
+    path('api/cells/<int:cell_id>', views.api_cell)
 ]
