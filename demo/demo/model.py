@@ -14,7 +14,9 @@ cell_data = {
         "name": "Pancreatic beta cell",
         "location": "pancreas",
         "role": "synthesize and secrete insulin"
+    }
 }
+
 
 class Model:
     def get_cells():
